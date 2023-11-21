@@ -57,26 +57,36 @@ const locationsArray = [
 ]
 
 document.addEventListener("DOMContentLoaded", ()=>{
+    const length1 = locationsArray.length
     const selectLocation = document.getElementById("selectLocation")
-    selectLocation.onchange = filterByState;
-
-    const length = locationsArray.length
-    for (let i = 0; i < length; i++) {
+    const selectParkType = document.getElementById("selectParkType")
+    for (let i = 0; i < length1; i++) {
         let option = document.createElement("option");
         option.textContent = locationsArray[i];
         selectLocation.appendChild(option)
     }
+const length2=parkTypesArray.length;
+    for (let i = 0; i < length2; i++) {
+        let option = document.createElement("option");
+        option.textContent = parkTypesArray[i];
+        selectParkType.appendChild(option)
+    }
 
-    // displayParks(nationalParksArray)
+    selectLocation.onchange = filterPark;
+    selectParkType.onchange = filterPark
 })
 
-function filterByState() {
+
+function filterPark() {
     let selected = document.getElementById("selectLocation").value;
-    const parks = [];
-    for (i = 0; i < nationalParksArray.length; i++) {
-        if (nationalParksArray[i].State == selected) {
-            parks.push(nationalParksArray[i]);
-        }
+    let selectedType = document.getElementById("selectParkType").value;
+    let parks = nationalParksArray
+    if (selected != "Select Location") {
+        parks = parks.filter((park)=> park.State == selected)
+    }
+
+    if (selectedType != "Select Park Type") {
+        parks = parks.filter((park)=> park.LocationName.includes(selectedType))
     }
     displayParks(parks)
 }

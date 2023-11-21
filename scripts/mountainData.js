@@ -531,13 +531,60 @@ const mountainsArray = [
 
 document.addEventListener("DOMContentLoaded", ()=>{
     const selectMountain = document.getElementById("selectMountain")
-
-    const length = mountainsArray.name
+    const length = mountainsArray.length
     for (let i = 0; i < length; i++) {
         let option = document.createElement("option");
-        option.textContent = mountainsArray[i];
+        option.textContent = mountainsArray[i].name;
         selectMountain.appendChild(option)
     }
 
-    displayMountain(mountainsArray)
+    selectMountain.onchange = findMountainInfo;
 })
+
+function findMountainInfo() {
+    let selectedMountain = document.getElementById("selectMountain").value
+    let mountains = mountainsArray
+    if (selectedMountain != "Select Mountain") {
+        mountains = mountains.find((mountains)=> mountains.length == selectedMountain)
+    }
+    displayMountains(mountains)
+}
+
+function displayMountains(mountains) {
+    const displayMountainsDiv = document.getElementById("displayMountains");
+    displayMountainsDiv.innerText = "";
+    const selectedMountain = document.getElementById("selectMountain").value;
+    mountainsArray.forEach(mountain => {
+        if(mountain.name == selectedMountain)
+            singleMountain(mountain, displayMountainsDiv)
+    });
+}
+
+
+function singleMountain(mountain, displayMountainDiv) {
+    const mountainDiv = document.createElement("div");
+    mountainDiv.classList.add("mountain");
+
+    displayMountainDiv.appendChild(mountainDiv);
+
+    const mountainInfoDiv = document.createElement("h5")
+    mountainDiv.appendChild(mountainInfoDiv);
+    const mountainName = mountain.name;
+    const mountainImage = mountain.img;
+    const mountainElevation = mountain.elevation;
+    const mountainEffort = mountain.effort;
+    const mountainDesc = mountain.desc;
+    const displayMessage = `<p> ${mountainName} <br> Elevation: ${mountainElevation} <br> Effort: ${mountainEffort}</p>
+    <img src="images/${mountainImage}"> <p> ${mountainDesc}</p>`
+
+    mountainInfoDiv.innerHTML = displayMessage;
+}
+
+function displayDescription() {
+    const mountainDescription = mountain.desc;
+    const displayDescription = `<p2> ${mountainDescription} </p2>`
+
+    displayDescription.innerHTML = displayDescription
+}
+
+

@@ -1,3 +1,60 @@
-.d-block{
-    height: 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #869b5b;
+    background-repeat: repeat;
+}
+
+.content{
+
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+     flex-direction: column;
+}
+
+.main-content{
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.forest{
+    float: right;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+
+footer{
+    margin-top: 600px;
+    background-color: #869b5b;
+    text-align: center;
+}
+
+.social{
+    text-decoration: none;
+}
+
+body{
+    background-color: #cad2c5;
+    background-repeat: repeat;
 }

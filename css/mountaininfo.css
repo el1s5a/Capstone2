@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    background-color: #cad2c5;
+}
+
+nav{
+    background-color: #869b5b;
+}
+
+footer {
+    text-align: center;
+    background-color: #869b5b;
+}

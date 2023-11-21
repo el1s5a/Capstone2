@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lexend:wght@300;400&family=Montserrat:wght@300&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="css/index.css"></script> 
-    <title>Home</title>
+    <!-- <title>Home</title> -->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">PristineParks.com</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +29,7 @@
         </div>
     </nav>
 
+  <div class="wrapper">
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -33,14 +37,14 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/forestbg.jpg" class="d-block w-100" alt="forest">
+            <img src="images/forestbg.jpg" class="d-block " alt="forest">
             <div class="carousel-caption d-none d-md-block">
               <h5>National Parks</h5>
               <p>Explore green forests on these scenic trails.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/mountainbg.jpg" class="d-block w-100" alt="mountains">
+            <img src="images/mountainbg.jpg" class="d-block" alt="mountains">
             <div class="carousel-caption d-none d-md-block">
               <h5>Mountains</h5>
               <p>Hike on high altitudes depending on moderate or strenuous paths.</p>
@@ -56,27 +60,42 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+  </div>
+  <div>
+      <div class="main-content">
+        <img src="images/forest2.jpg" width="500" height="300">
+      </div>
 
+     <div class="content">
+      <h4>Nature's Sanctuary</h4>
+      <p>Visiting national parks offers a transformative experience that connects individuals with the awe-inspiring beauty of nature, fostering a deep appreciation for the environment and wildlife. These protected landscapes provide a sanctuary for biodiversity, allowing visitors to witness diverse ecosystems and rare species in their natural habitats. The breathtaking scenery, from majestic mountains to cascading waterfalls, creates a sense of wonder and tranquility, providing a much-needed escape from the hustle and bustle of daily life.</p>
+     </div>
 
+     <div class="forest">
+      <img class="forest" src="images/forests3.jpg" width="500" height="300">
+      <h4>Why you should visit national parks</h4>
+      <p>From the towering peaks of majestic mountains to the sprawling valleys adorned with diverse ecosystems, national parks offer a canvas of unparalleled biodiversity.</p>
+    </div>
+  </div>  
 
       <footer>
         <div class="footer-content">
             <div class="footer-section contact">
                 <h3>Contact Us</h3>
-                <p>Email: contact@example.com</p>
+                <p>Email: contact@pristineparks.com</p>
                 <p>Phone: +1 (123) 456-7890</p>
                 <p>Address: 123 Main St, City, Country</p>
             </div>
             </div>
             <div class="footer-section social">
                 <h3>Follow Us</h3>
-                <a href="#" class="social-icon">Facebook</a>
-                <a href="#" class="social-icon">Twitter</a>
-                <a href="#" class="social-icon">Instagram</a>
+                <a href="images/facebooklogo.png" class="social-icon">Facebook</a>
+                <a href="images/twitlogo.png" class="social-icon">Twitter</a>
+                <a href="images/instalogo.png" class="social-icon">Instagram</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <p>&copy; 2023 PristineParks. All rights reserved.</p>
         </div>
     </footer>
 

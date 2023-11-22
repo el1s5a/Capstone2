@@ -138,6 +138,7 @@ function addAddress(park, parkInfoDiv) {
 function addContact(park, parkInfoDiv) {
     const parkContact = document.createElement("contact")
 
+    parkContact.innerText = "Contact:"
     for (const key in park) {
         if (key == "Phone" || key == "Fax") {
             if (park[key] !=0)parkContact.innerText +=` ${park[key]}`;
@@ -150,6 +151,7 @@ function addContact(park, parkInfoDiv) {
 
 function addSite(park, parkInfoDiv) {
     const parkSite = document.createElement("site")
+
     for (const key in park ) {
         if (key == "Visit") {
             if (park[key] !=0)parkSite.innerText +=` ${park[key]}`;

@@ -12,7 +12,37 @@ nav{
     background-color: #869b5b;
 }
 
+.mountains{
+    padding: 50px;
+    margin-left: 200px;
+}
+
+.display-div{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid;
+    margin: 20px;
+    margin-left: 600px;
+    margin-bottom: 200px;
+    padding: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #cad2c5;
+}
+
+.dropdown{
+    margin-left: 20px;
+}
+
+.mtns{
+    padding: 20px;
+    float: right;
+}
+
 footer {
     text-align: center;
     background-color: #869b5b;
+    margin-top: 600px;
+    position: fixed;
+    
 }

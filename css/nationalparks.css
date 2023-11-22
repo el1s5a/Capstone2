@@ -8,11 +8,35 @@ body{
     background-color: #cad2c5;
 }
 
+.nationalpark{
+    align-items: center;
+    padding: 50px;
+    margin-left: 70px;
+}
+
+.form-container{
+    padding: 10px;
+}
+
+.display-div{
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid;
+    margin: 20px;
+    margin-left: 800px;
+    margin-bottom: 200px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #cad2c5;
+}
+
 nav{
     background-color: #869b5b;
 }
 
 footer {
+    position: fixed;
+    margin-top: 600px;
     text-align: center;
     background-color: #869b5b;
 }

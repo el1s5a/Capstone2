@@ -28,7 +28,13 @@
     </div>
 </nav>
 
+<div class="nationalpark">
+  <img class="nationalpark" src="images/nationalpark2.jpg">
+  <h4>National Parks</h4>
+  <p>Here you can search local national parks by the state you live in and the type of park you would like to visit.</p>
+</div>
 
+  <div class="form-container">
     <main id="states" class="row row-cols-2">
       <form id="search" class="w-25">
         <div class="form-group">
@@ -38,11 +44,6 @@
           </select>
         </div>
       </form>
-
-      <div id="displayParksDiv" class="cols-5">
-        <div id="displayParks"></div>
-      </div>
-    </main>
 
     <main class="row row-cols-2">
       <form id="search" class="w-25">
@@ -54,6 +55,34 @@
         </div>
       </form>
     </main>  
+  </div>  
+
+  <div class="display-div">
+    <div id="displayParksDiv" class="cols-5">
+      <div id="displayParks"></div>
+    </div>
+  </div>  
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section contact">
+              <h3>Contact Us</h3>
+              <p>Email: contact@pristineparks.com</p>
+              <p>Phone: +1 (123) 456-7890</p>
+              <p>Address: 123 Main St, City, Country</p>
+          </div>
+          </div>
+          <div class="footer-section social">
+              <h3>Follow Us</h3>
+              <a href="images/facebooklogo.png" class="social-icon">Facebook</a>
+              <a href="images/twitlogo.png" class="social-icon">Twitter</a>
+              <a href="images/instalogo.png" class="social-icon">Instagram</a>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2023 PristineParks. All rights reserved.</p>
+      </div>
+  </footer>
 
     <script src="scripts/parkTypeData.js"></script>
     <script src="scripts/locationData.js"></script>

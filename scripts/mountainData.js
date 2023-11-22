@@ -580,11 +580,5 @@ function singleMountain(mountain, displayMountainDiv) {
     mountainInfoDiv.innerHTML = displayMessage;
 }
 
-function displayDescription() {
-    const mountainDescription = mountain.desc;
-    const displayDescription = `<p2> ${mountainDescription} </p2>`
-
-    displayDescription.innerHTML = displayDescription
-}
 
 

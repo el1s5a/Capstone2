@@ -9,6 +9,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #cad2c5;
 }
 
 nav{
@@ -19,7 +20,7 @@ nav{
 .content{
 
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 50px;
 }
 
@@ -35,11 +36,12 @@ nav{
     margin-top: 40px;
     margin-left: 50px;
     margin-bottom: 40px;
+    background-color: #cad2c5;
 }
 
 .forest{
+
     float: right;
-    margin-top: 50px;
     padding: 20px;
 }
 
@@ -54,7 +56,4 @@ footer{
     text-decoration: none;
 }
 
-body{
-    background-color: #cad2c5;
-    background-repeat: repeat;
-}
+
